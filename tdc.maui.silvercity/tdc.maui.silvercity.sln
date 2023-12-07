@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdc.maui.silvercity", "tdc.maui.silvercity\tdc.maui.silvercity.csproj", "{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD3B12E-7BEF-440E-A9BC-2D6464BB776F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8996876-4658-4624-B787-15DF5FAF308C}
+	EndGlobalSection
+EndGlobal
