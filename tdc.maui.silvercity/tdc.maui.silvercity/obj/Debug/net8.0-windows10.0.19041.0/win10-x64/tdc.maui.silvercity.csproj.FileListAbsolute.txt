@@ -182,3 +182,10 @@ C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\b
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\genericfemale.scale-100.jpg
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\genericmale.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\genericgang.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\highdenseurban.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lightdenseurban.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mediumdenseurban.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\political.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\research.scale-100.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Markup.dll

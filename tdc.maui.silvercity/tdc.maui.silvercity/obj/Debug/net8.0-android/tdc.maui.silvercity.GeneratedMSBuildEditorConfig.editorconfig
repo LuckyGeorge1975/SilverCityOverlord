@@ -22,12 +22,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = tdc.maui.silvercity.App.xa
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Workspace/GitHub/SilverCityOverlord/tdc.maui.silvercity/tdc.maui.silvercity/AppShell.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = tdc.maui.silvercity.AppShell.xaml
-build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
-build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
-
 [C:/Workspace/GitHub/SilverCityOverlord/tdc.maui.silvercity/tdc.maui.silvercity/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = tdc.maui.silvercity.MainPage.xaml
@@ -45,3 +39,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = tdc.maui.silvercity.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Workspace/GitHub/SilverCityOverlord/tdc.maui.silvercity/tdc.maui.silvercity/Views/GamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = tdc.maui.silvercity.Views.GamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GamePage.xaml

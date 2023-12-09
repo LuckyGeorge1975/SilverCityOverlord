@@ -60,10 +60,16 @@
 	  <None Remove="Resources\Images\gangs\genericgang.jpg" />
 	  <None Remove="Resources\Images\player\genericfemale.jpg" />
 	  <None Remove="Resources\Images\player\genericmale.jpg" />
+	  <None Remove="Resources\Images\regions\highdenseurban.jpg" />
+	  <None Remove="Resources\Images\regions\lightdenseurban.jpg" />
+	  <None Remove="Resources\Images\regions\mediumdenseurban.jpg" />
+	  <None Remove="Resources\Images\regions\political.jpg" />
+	  <None Remove="Resources\Images\regions\research.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui.Markup" Version="4.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -71,15 +77,26 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Game\Regions\" />
-	  <Folder Include="Views\" />
-	  <Folder Include="ViewModels\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiImage Include="Resources\Images\gangs\genericgang.jpg" />
 	  <MauiImage Include="Resources\Images\player\genericfemale.jpg" />
 	  <MauiImage Include="Resources\Images\player\genericmale.jpg" />
+	  <MauiImage Include="Resources\Images\regions\highdenseurban.jpg" />
+	  <MauiImage Include="Resources\Images\regions\lightdenseurban.jpg" />
+	  <MauiImage Include="Resources\Images\regions\mediumdenseurban.jpg" />
+	  <MauiImage Include="Resources\Images\regions\political.jpg" />
+	  <MauiImage Include="Resources\Images\regions\research.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\GamePage.xaml.cs">
+	    <DependentUpon>GamePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\GamePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

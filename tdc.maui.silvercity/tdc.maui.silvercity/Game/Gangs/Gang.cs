@@ -4,8 +4,9 @@ namespace tdc.maui.silvercity.Game.Gangs
 {
     public class Gang : IGang
     {
+        private static int _id;
         private readonly string _name;
-        private readonly string _description;
+        private protected string _description;
 
         private int _level;
         private int _techLevel;
@@ -16,32 +17,47 @@ namespace tdc.maui.silvercity.Game.Gangs
         private int _charisma;
         private int _skill;
 
-        public string Name { get { return _name; } }
-        public string Description { get { return _description; } }
-        public int Level { get => _level; }
-        public int TechLevel { get => _techLevel; }
-        public int Attack { get => _attack; }
-        public int Defense { get => _defense; }
-        public int Speed { get => _speed; }
-        public int Intelligence { get => _intelligence; }
-        public int Charisma { get => _charisma; }
-        public int Skill { get => _skill; }
+        public string Name => _name;
+        public string Description => _description;
+        public int Level => _level;
+        public int TechLevel => _techLevel;
+        public int Attack => _attack;
+        public int Defense => _defense;
+        public int Speed => _speed;
+        public int Intelligence => _intelligence;
+        public int Charisma => _charisma;
+        public int Skill => _skill;
 
-        public Image Image = new()
+        public Image Image => new()
         {
             Source = ImageSource.FromFile("gangs\\genericgang.jpg")
         };
 
         public Gang()
         {
-            _name = string.Empty;
-            _description = string.Empty;
+            _id += 1;
+            _name = $"Gang {_id}";
+            _description = String.Empty;
+            InitializeStartValues();
         }
-        public Gang(string name)
+        public Gang(string name) : this()
         {
             _name = name;
-            _description = string.Empty;
         }
 
+        private void InitializeStartValues()
+        {
+            if (String.IsNullOrEmpty(_description))
+                _description = "No Description";
+
+            _level = 1;
+            _techLevel = 1;
+            _attack = 1;
+            _defense = 1;
+            _speed = 1;
+            _intelligence = 1;
+            _charisma = 1;
+            _skill = 1;
+        }
     }
 }

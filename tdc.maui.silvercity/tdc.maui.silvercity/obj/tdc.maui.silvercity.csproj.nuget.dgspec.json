@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
@@ -115,6 +119,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
@@ -167,6 +175,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
@@ -218,6 +230,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",

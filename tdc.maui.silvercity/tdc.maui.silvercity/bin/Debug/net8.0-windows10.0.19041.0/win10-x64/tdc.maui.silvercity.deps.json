@@ -10,6 +10,7 @@
       "tdc.maui.silvercity/1.0": {
         "dependencies": {
           "CommunityToolkit.Maui": "7.0.0",
+          "CommunityToolkit.Maui.Markup": "4.0.0",
           "CommunityToolkit.Mvvm": "8.2.2",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.3",
@@ -52,6 +53,17 @@
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Markup/4.0.0": {
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Maui.Markup.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -506,6 +518,13 @@
       "sha512": "sha512-9FwAuV0fljTPFOxDdve5ZNwLNfrANB4xv5AcixVLcicYv5RQUDui04KzcdLfhwdnDNPKweJAd3yfa/Sex5iJpw==",
       "path": "communitytoolkit.maui.core/7.0.0",
       "hashPath": "communitytoolkit.maui.core.7.0.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui.Markup/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sR70ii6TXpNxunuRMZSEf2aV0ChV2ylAK2m8+aV7jjojXDVCBqhU/gk1CPiaMb88SmdBAF3x8mGgWEe9ZQxgTQ==",
+      "path": "communitytoolkit.maui.markup/4.0.0",
+      "hashPath": "communitytoolkit.maui.markup.4.0.0.nupkg.sha512"
     },
     "CommunityToolkit.Mvvm/8.2.2": {
       "type": "package",

@@ -1,5 +1,11 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\genericfemale.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\genericgang.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable\genericmale.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\highdenseurban.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\lightdenseurban.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\mediumdenseurban.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\political.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\research.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png

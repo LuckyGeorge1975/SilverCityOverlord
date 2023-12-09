@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"tdc.maui.silvercity.dll",
 		"CommunityToolkit.Maui.dll",
 		"CommunityToolkit.Maui.Core.dll",
+		"CommunityToolkit.Maui.Markup.dll",
 		"CommunityToolkit.Mvvm.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",

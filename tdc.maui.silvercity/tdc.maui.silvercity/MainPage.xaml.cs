@@ -1,24 +1,16 @@
-﻿namespace tdc.maui.silvercity
-{
-    public partial class MainPage : ContentPage
-    {
-        int count = 0;
+﻿using CommunityToolkit.Mvvm.Input;
+using tdc.maui.silvercity.Game.Players;
+using tdc.maui.silvercity.ViewModels;
+using tdc.maui.silvercity.Views;
 
-        public MainPage()
+namespace tdc.maui.silvercity
+{
+    public partial class MainPage : BasePage<MainViewModel>
+    {
+        public MainPage(MainViewModel mainViewModel)
+            : base(mainViewModel)
         {
             InitializeComponent();
-        }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
         }
     }
 

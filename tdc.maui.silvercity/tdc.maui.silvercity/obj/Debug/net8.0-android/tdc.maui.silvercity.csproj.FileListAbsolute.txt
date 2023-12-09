@@ -1078,3 +1078,10 @@ C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\o
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\android\bin\tdc.maui.silvercity.aab
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\android\bin\tdc.maui.silvercity.apks
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\android\src\tdc\maui\silvercity\R.java
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\genericgang.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\highdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\lightdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\mediumdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\political.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\resizetizer\r\drawable\research.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Maui.Markup.dll

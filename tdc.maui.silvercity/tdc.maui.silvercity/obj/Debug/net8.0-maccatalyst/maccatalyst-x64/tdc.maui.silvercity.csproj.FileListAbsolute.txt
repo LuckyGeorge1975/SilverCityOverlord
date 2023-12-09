@@ -304,3 +304,10 @@ C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\b
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\genericmale.jpg
 C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\genericfemale.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lightdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\highdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\mediumdenseurban.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\research.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\political.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\genericgang.jpg
+C:\Workspace\GitHub\SilverCityOverlord\tdc.maui.silvercity\tdc.maui.silvercity\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Markup.dll

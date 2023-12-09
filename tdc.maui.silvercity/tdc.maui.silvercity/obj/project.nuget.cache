@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hqk+54Yx/XLveam6kFqI4o+TG14xdr2uUPcjAPperWQCiuKuUAZAa9Nsds/Xp+Ja1U7XIrykBhWr9C3NG3M5Ag==",
+  "dgSpecHash": "Kfvza2fUi468+pw6CEj25vWGfov9DDI6cnNHQkhP+YvT3l3Br0Ip0kOkw6LujDxTP+T2TF/0a0/njd2Yx/h7+g==",
   "success": true,
   "projectFilePath": "C:\\Workspace\\GitHub\\SilverCityOverlord\\tdc.maui.silvercity\\tdc.maui.silvercity\\tdc.maui.silvercity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\communitytoolkit.maui\\7.0.0\\communitytoolkit.maui.7.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.0\\communitytoolkit.maui.core.7.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\communitytoolkit.maui.markup\\4.0.0\\communitytoolkit.maui.markup.4.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
