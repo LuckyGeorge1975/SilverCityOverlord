@@ -1,0 +1,32 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:tdc.avalonia.silvercity.ViewModels"
+             xmlns:menu="clr-namespace:tdc.avalonia.silvercity.ViewModels.Menu"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="tdc.avalonia.silvercity.Views.Menu.StartView"
+             x:DataType="menu:StartViewModel">
+    <Viewbox>
+        <Panel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100">
+            <Image Source="{StaticResource MenuBackgroundImage}" Stretch="Uniform" />
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <Button Theme="{StaticResource MenuButtonTheme}" Grid.Row="0" Grid.Column="1" Margin="5,25,5,25" Content="Start" Command="{Binding StartCommand}"/>
+                <Button Theme="{StaticResource MenuButtonTheme}" Grid.Row="1" Grid.Column="1" Margin="5,5,5,25" Content="Continue" Command="{Binding ContinueCommand}"/>
+                <Button Theme="{StaticResource MenuButtonTheme}" Grid.Row="2" Grid.Column="1" Margin="5,5,5,25" Content="Options" Command="{Binding OptionsCommand}"/>
+                <Button Theme="{StaticResource MenuButtonTheme}" Grid.Row="3" Grid.Column="1" Margin="5,5,5,25" Content="About" Command="{Binding AboutCommand}"/>
+            </Grid>
+        </Panel>
+    </Viewbox>
+</UserControl>

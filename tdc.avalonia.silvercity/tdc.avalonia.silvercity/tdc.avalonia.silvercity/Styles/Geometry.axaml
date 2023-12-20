@@ -1,0 +1,482 @@
+﻿<Style xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+		<StackPanel>
+            <Image Source="{DynamicResource NextButtonBackgroundImage}" Width="20"/>
+            <Image Source="{DynamicResource PreviousButtonBackgroundImage}" Width="20"/>
+        </StackPanel>
+    </Design.PreviewWith>
+    <Style.Resources>
+        <!-- Menu Panel Images -->
+        <DrawingImage x:Key="MenuBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing  Brush="{StaticResource MenuBackgroundBrush}"
+                                  Geometry="M 26.685185,1.0185161
+                              H 182.22222
+                              V 87.851851
+                              l 16.75926,16.759259 0,177.22222
+                              L 182.83333,298
+                              H 1.0185189
+                              l 0,-271.314817
+                              z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBackgroundBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 181.2037,2.0370346
+                                  v 85.3888914 0.85185
+                                  l 0.5926,0.592595 16.16666,16.166659 0,176.3889
+                                  L 182.38889,297
+                                  H 2.0370374
+                                  l 0,-269.888891
+                                  L 27.092593,2.0555531
+                                  H 181.2037
+                                  M 183.24074,-2.416e-6
+                                  H 26.25926
+                                  L 4.1199999e-7,26.259257
+                                  l 9.3e-13,272.759263
+                                  H 183.24074
+                                  L 200,282.25926 200,104.18518 183.24074,87.425926
+                                  Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="M 5.071881e-7,22.888889
+                                  V 1.0508493e-7
+                                  H 22.888889
+                                  Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="M 185.66667,29.833331
+                                  V 6.1666644
+                                  l 11.7037,11.7592596
+                                  v 0.203704
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 197.37037,35.22222 -11.7037,11.685186
+                                  v -11.62963
+                                  l 11.7037,-11.703704
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 197.37037,52.277776 -11.7037,11.722222
+                                  v -11.62963
+                                  l 11.7037,-11.703703
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 197.37037,69.370369 -11.7037,11.703704
+                                  V 69.425924
+                                  l 11.7037,-11.685185
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 185.66667,86.518518 11.7037,-11.703707
+                                  v 23.444445
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 14.308564,8.5807659 -4.9499672,4.9499671 1.6855312,1.684164 4.9486,-4.9486
+                                  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+		<DrawingImage x:Key="VerticalListBackgroundImage">
+			<DrawingGroup>
+				<GeometryDrawing  Brush="{StaticResource MenuBackgroundBrush}"
+                                  Geometry="M 0.2645832,0.26458299
+								  H 74.903545
+								  V 134.35542
+								  H 0.2645832
+								  Z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBackgroundBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="M 74.638957,0.52916672
+								  V 134.09083
+								  H 0.52916654
+								  V 0.52916672
+								  H 74.638957
+								  
+								  M 75.168124,5.7999998e-8
+								  H 74.638957 0.52916654 -1.2e-7
+								  V 0.52916672 134.09083 134.62
+								  H 0.52916654 74.638957 75.168124
+								  V 134.09083 0.52916672
+								  Z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+			</DrawingGroup>
+		</DrawingImage>
+
+		<!-- List Item View Images -->
+        <!-- Vertical Item -->
+		<DrawingImage x:Key="VerticalItemBackGroundImage">
+			<DrawingGroup>
+				<!-- Border -->
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 4.6086043,104.68851
+								  v -9.833647
+								  l 9.8336547,9.833647
+								  z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 64.197624,14.031308
+								  v 0.08808
+								  l -3.992172,3.962815
+								  V 10.03914
+								  Z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 60.205452,19.931502 3.992172,-3.962817
+								  v 3.962817
+								  l -3.992172,3.962817
+								  z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 60.205452,25.743633 3.992172,-3.962816
+								  v 3.933462
+								  l -3.992172,3.99217
+								  z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 60.205452,31.555765 3.992172,-3.992171
+								  v 3.962814
+								  l -3.992172,3.992172
+								  z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="m 64.197624,33.375724
+								  v 7.98434
+								  l -3.992172,-3.99217
+								  z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.5"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+				<GeometryDrawing  Brush="{StaticResource MenuBorderBrush}"
+                                  Geometry="M 4.3152974,4.3150695
+								  V 91.483396
+								  L 17.843442,104.9823
+								  h 0.121555 48.581197
+								  V 46.052481
+								  L 58.884278,38.391152
+								  V 4.3150695
+								  Z
+								  
+								  M 4.9023813,4.9021538
+								  H 58.297195
+								  V 38.634265
+								  l 7.661911,7.661326
+								  V 104.39522
+								  H 18.086525
+								  L 4.9023813,91.239723
+								  Z">
+					<GeometryDrawing.Pen>
+						<Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+					</GeometryDrawing.Pen>
+				</GeometryDrawing>
+                <GeometryDrawing  Brush="{StaticResource MenuBackgroundBrush}"
+                                  Geometry="M 18.131338,104.39522 4.9023813,91.146556
+								  V 4.9021538
+								  H 58.370632
+								  V 38.607444
+								  l 7.588474,7.616523
+								  v 58.171253
+								  z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+			</DrawingGroup>
+		</DrawingImage>
+
+		<!-- Label Background Images -->
+		<DrawingImage x:Key="HeaderLabelBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBackgroundBrush}"
+                                 Geometry="M 0.46322975,8.9326509 13.482383,0.46322975 100,0.20617869
+								 V 17.14502
+								 L 86.980851,25.61444 0.46322975,25.871491
+								 Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+
+		<!-- Button Background Images -->
+        <DrawingImage x:Key="MenuButtonBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBackgroundBrush}"
+                                 Geometry="m 324.18125,30.000236
+                                 v 34.871773
+                                 l 20.45094,10.21333
+                                 H 472.17686
+                                 V 34.946704
+                                 h -51.62889
+                                 l -9.96115,-4.946468
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBackgroundBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBorderBrush}"
+                                 Geometry="m 323.56475,29.383219
+                                 v 35.744589
+                                 l 20.81113,10.574031
+                                 h 128.10898 0.3085
+                                 V 34.329687
+                                 h -51.98907
+                                 l -9.96167,-4.946468
+                                 z
+                                 m 0.6165,0.617017
+                                 h 86.40557
+                                 l 9.96115,4.946468
+                                 h 51.62889
+                                 V 75.085339
+                                 H 344.63219
+                                 l -20.45094,-10.21333
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="MenuButtonHoverImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonHoverBackgroundBrush}"
+                                 Geometry="m 324.18125,30.000236
+                                 v 34.871773
+                                 l 20.45094,10.21333
+                                 H 472.17686
+                                 V 34.946704
+                                 h -51.62889
+                                 l -9.96115,-4.946468
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonHoverBackgroundBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBorderBrush}"
+                                 Geometry="m 323.56475,29.383219
+                                 v 35.744589
+                                 l 20.81113,10.574031
+                                 h 128.10898 0.3085
+                                 V 34.329687
+                                 h -51.98907
+                                 l -9.96167,-4.946468
+                                 z
+                                 m 0.6165,0.617017
+                                 h 86.40557
+                                 l 9.96115,4.946468
+                                 h 51.62889
+                                 V 75.085339
+                                 H 344.63219
+                                 l -20.45094,-10.21333
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="MenuButtonPressedImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonPressedBackgroundBrush}"
+                                 Geometry="m 324.18125,30.000236
+                                 v 34.871773
+                                 l 20.45094,10.21333
+                                 H 472.17686
+                                 V 34.946704
+                                 h -51.62889
+                                 l -9.96115,-4.946468
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonPressedBackgroundBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBorderBrush}"
+                                 Geometry="m 323.56475,29.383219
+                                 v 35.744589
+                                 l 20.81113,10.574031
+                                 h 128.10898 0.3085
+                                 V 34.329687
+                                 h -51.98907
+                                 l -9.96167,-4.946468
+                                 z
+                                 m 0.6165,0.617017
+                                 h 86.40557
+                                 l 9.96115,4.946468
+                                 h 51.62889
+                                 V 75.085339
+                                 H 344.63219
+                                 l -20.45094,-10.21333
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="MenuButtonDisabledImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="DimGray"
+                                 Geometry="m 324.18125,30.000236
+                                 v 34.871773
+                                 l 20.45094,10.21333
+                                 H 472.17686
+                                 V 34.946704
+                                 h -51.62889
+                                 l -9.96115,-4.946468
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="DimGray" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="DarkGray"
+                                 Geometry="m 323.56475,29.383219
+                                 v 35.744589
+                                 l 20.81113,10.574031
+                                 h 128.10898 0.3085
+                                 V 34.329687
+                                 h -51.98907
+                                 l -9.96167,-4.946468
+                                 z
+                                 m 0.6165,0.617017
+                                 h 86.40557
+                                 l 9.96115,4.946468
+                                 h 51.62889
+                                 V 75.085339
+                                 H 344.63219
+                                 l -20.45094,-10.21333
+                                 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="DarkGray" Thickness="0.25"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+
+		<!-- Previous Button Background Images-->
+        <DrawingImage x:Key="PreviousButtonBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBackgroundBrush}"
+                                 Geometry="M 0,29.999998 15,0
+								 v 59.999998
+								 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="PreviousButtonHoverBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonHoverBackgroundBrush}"
+                                 Geometry="M 0,29.999998 15,0
+								 v 59.999998
+								 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="PreviousButtonPressedBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonPressedBackgroundBrush}"
+                                 Geometry="M 0,29.999998 15,0
+								 v 59.999998
+								 z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <!-- Next Button Background Images-->
+        <DrawingImage x:Key="NextButtonBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonBackgroundBrush}"
+                                 Geometry="M 15.5,30.223605 0.5,0.22360681
+								 V 60.223605
+								 Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="NextButtonHoverBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonHoverBackgroundBrush}"
+                                 Geometry="M 15.5,30.223605 0.5,0.22360681
+								 V 60.223605
+								 Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+        <DrawingImage x:Key="NextButtonPressedBackgroundImage">
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource MenuButtonPressedBackgroundBrush}"
+                                 Geometry="M 15.5,30.223605 0.5,0.22360681
+								 V 60.223605
+								 Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="{StaticResource MenuButtonBorderBrush}" Thickness="1" LineCap="Round"/>
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage>
+    </Style.Resources>
+</Style>

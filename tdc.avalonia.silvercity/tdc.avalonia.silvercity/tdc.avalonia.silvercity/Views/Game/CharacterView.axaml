@@ -1,0 +1,106 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:game="clr-namespace:tdc.avalonia.silvercity.ViewModels.Game"
+             xmlns:designTime="clr-namespace:tdc.avalonia.silvercity.ViewModels.DesignTime"
+             mc:Ignorable="d"
+             x:Class="tdc.avalonia.silvercity.Views.Game.CharacterView"
+             x:DataType="game:CharacterViewModel"
+             d:DataContext="{x:Static designTime:DesignData.CharacterViewModel}"
+             Width="300">
+    <Panel>
+        <Image Stretch="Uniform"
+               Source="{StaticResource VerticalItemBackGroundImage}" />
+        <Grid HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Row="1"
+                    Grid.Column="1"
+                    BorderThickness="2"
+                    BorderBrush="{StaticResource MenuBorderBrush}">
+                <Image Width="200"
+                       Height="200"
+                       Stretch="UniformToFill"
+                       Source="{Binding Image}" />
+            </Border>
+
+            <Border Grid.Row="3"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    BorderThickness="2"
+                    BorderBrush="{StaticResource MenuBorderBrush}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0"
+                           Grid.Column="0"
+                           Theme="{DynamicResource DefaultLabelThemeLeft}"
+                           Content="Strength" />
+                    <Label Grid.Row="0"
+                           Grid.Column="1"
+                           Theme="{DynamicResource DefaultLabelThemeRight}"
+                           Content="{Binding Strength}"/>
+                    <Label Grid.Row="1"
+                           Grid.Column="0"
+                           Theme="{DynamicResource DefaultLabelThemeLeft}"
+                           Content="Agility" />
+                    <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Theme="{DynamicResource DefaultLabelThemeRight}"
+                           Content="{Binding Agility}" />
+                    <Label Grid.Row="2"
+                           Grid.Column="0"
+                           Theme="{DynamicResource DefaultLabelThemeLeft}"
+                           Content="Intelligence" />
+                    <Label Grid.Row="2"
+                           Grid.Column="1"
+                           Theme="{DynamicResource DefaultLabelThemeRight}"
+                           Content="{Binding Intelligence}" />
+                    <Label Grid.Row="3"
+                           Grid.Column="0"
+                           Theme="{DynamicResource DefaultLabelThemeLeft}"
+                           Content="Charisma" />
+                    <Label Grid.Row="3"
+                           Grid.Column="1"
+                           Theme="{DynamicResource DefaultLabelThemeRight}"
+                           Content="{Binding Charisma}" />
+                    <Label Grid.Row="4"
+                           Grid.Column="0"
+                           Theme="{DynamicResource DefaultLabelThemeLeft}"
+                           Content="Tech" />
+                    <Label Grid.Row="4"
+                           Grid.Column="1"
+                           Theme="{DynamicResource DefaultLabelThemeRight}"
+                           Content="{Binding Tech}" />
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Panel>
+</UserControl>

@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AvaloniaResource Remove="Assets\Characters\boss-science-female-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-science-female-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-science-male-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-science-male-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-smart-female-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-smart-female-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-smart-male-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-smart-male-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-strong-female-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-strong-female-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-strong-male-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-strong-male-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-stylish-female-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-stylish-female-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-stylish-male-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-stylish-maöe-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-tech-female-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-tech-female-02.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-tech-male-01.png" />
+      <AvaloniaResource Remove="Assets\Characters\boss-tech-male-02.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Characters\boss-science-female-01.png" />
+      <None Remove="Assets\Characters\boss-science-female-02.png" />
+      <None Remove="Assets\Characters\boss-science-male-01.png" />
+      <None Remove="Assets\Characters\boss-science-male-02.png" />
+      <None Remove="Assets\Characters\boss-smart-female-01.png" />
+      <None Remove="Assets\Characters\boss-smart-female-02.png" />
+      <None Remove="Assets\Characters\boss-smart-male-01.png" />
+      <None Remove="Assets\Characters\boss-smart-male-02.png" />
+      <None Remove="Assets\Characters\boss-strong-female-01.png" />
+      <None Remove="Assets\Characters\boss-strong-female-02.png" />
+      <None Remove="Assets\Characters\boss-strong-male-01.png" />
+      <None Remove="Assets\Characters\boss-strong-male-02.png" />
+      <None Remove="Assets\Characters\boss-stylish-female-01.png" />
+      <None Remove="Assets\Characters\boss-stylish-female-02.png" />
+      <None Remove="Assets\Characters\boss-stylish-male-01.png" />
+      <None Remove="Assets\Characters\boss-stylish-maöe-02.png" />
+      <None Remove="Assets\Characters\boss-tech-female-01.png" />
+      <None Remove="Assets\Characters\boss-tech-female-02.png" />
+      <None Remove="Assets\Characters\boss-tech-male-01.png" />
+      <None Remove="Assets\Characters\boss-tech-male-02.png" />
+      <None Remove="Assets\Gangs\Leader\leader-female-01.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-02.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-03.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-04.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-05.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-06.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-07.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-08.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-female-09.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-01.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-02.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-03.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-04.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-05.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-06.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-07.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-08.jpg" />
+      <None Remove="Assets\Gangs\Leader\leader-male-09.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Assets\Characters\boss-science-female-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-science-female-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-science-male-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-science-male-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-smart-female-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-smart-female-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-smart-male-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-smart-male-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-strong-female-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-strong-female-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-strong-male-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-strong-male-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-stylish-female-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-stylish-female-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-stylish-male-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-stylish-maöe-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-tech-female-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-tech-female-02.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-tech-male-01.png" />
+      <EmbeddedResource Include="Assets\Characters\boss-tech-male-02.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+        <PackageReference Include="Splat" Version="14.8.12" />
+        <PackageReference Include="Splat.DependencyInjection.SourceGenerator" Version="1.1.93">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Splat.Microsoft.Extensions.DependencyInjection" Version="14.8.12" />
+        <PackageReference Include="Splat.Microsoft.Extensions.Logging" Version="14.8.12" />
+        <PackageReference Include="Splat.ReactiveUIExtensions" Version="1.0.2" />
+        <PackageReference Include="Splat.SimpleInjector" Version="14.8.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\Fonts\" />
+      <Folder Include="Exceptions\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Menu\ChooseCharacterView.axaml.cs">
+        <DependentUpon>ChooseCharacterView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Menu\StartView.axaml.cs">
+        <DependentUpon>StartView.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+</Project>

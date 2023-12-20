@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Add Resources Here -->
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key='Default'>
+            <SolidColorBrush x:Key="MenuFontColor" Color="#ff00ff00" />
+            <SolidColorBrush x:Key="MenuBorderBrush" Color="#ff00ff00"/>
+            <SolidColorBrush x:Key="MenuBackgroundBrush" Opacity="0.64" Color="#ff000000"/>
+            <SolidColorBrush x:Key="ItemDropShadowBrush" Opacity="0.71" Color="#ff000000"/>
+            <SolidColorBrush x:Key="ItemBackgroundBrush" Opacity="1" Color="#ff000000"/>
+            <SolidColorBrush x:Key="MenuButtonBorderBrush" Color="#ff00ff00"/>
+            <SolidColorBrush x:Key="MenuButtonBackgroundBrush" Color="#ff333333"/>
+            <SolidColorBrush x:Key="MenuButtonHoverBackgroundBrush" Color="#ff556b2f"/>
+            <SolidColorBrush x:Key="MenuButtonPressedBackgroundBrush" Color="#ff008000"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

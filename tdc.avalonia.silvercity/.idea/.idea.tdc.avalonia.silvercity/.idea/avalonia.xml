@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/App.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/ButtonStyles.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/ControlPaths.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Desktop/tdc.avalonia.silvercity.Desktop.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/Geometry.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/Menu.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/MenuButton.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Desktop/tdc.avalonia.silvercity.Desktop.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Styles/MenuGrid.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Desktop/tdc.avalonia.silvercity.Desktop.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Themes/Theme.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Views/MainView.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Desktop/tdc.avalonia.silvercity.Desktop.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Views/MainWindow.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Views/Menu/ChooseCharacterMenuView.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+        <entry key="tdc.avalonia.silvercity/tdc.avalonia.silvercity/Views/Menu/StartMenuView.axaml" value="tdc.avalonia.silvercity/tdc.avalonia.silvercity.Browser/tdc.avalonia.silvercity.Browser.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

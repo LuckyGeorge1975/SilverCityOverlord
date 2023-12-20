@@ -1,0 +1,66 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:menu="clr-namespace:tdc.avalonia.silvercity.ViewModels.Menu"
+             xmlns:designTime="clr-namespace:tdc.avalonia.silvercity.ViewModels.DesignTime"
+             mc:Ignorable="d"
+             d:DesignWidth="720"
+             d:DesignHeight="720"
+             x:Class="tdc.avalonia.silvercity.Views.Menu.ChooseCharacterView"
+             x:DataType="menu:ChooseCharacterViewModel"
+             d:DataContext="{x:Static designTime:DesignData.ChooseCharacterViewModel}">
+    <Grid HorizontalAlignment="Stretch"
+          VerticalAlignment="Stretch"
+          Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+               Content="Choose Character"
+               Theme="{DynamicResource HeaderLabelTheme}" />
+		<TransitioningContentControl Grid.Row="1"
+                                     Grid.Column="1"
+                                     Grid.ColumnSpan="2"
+                                     Margin="20"
+                                     Content="{Binding CurrentCharacter}"
+                                     Background="Transparent">
+            <TransitioningContentControl.PageTransition>
+				<PageSlide Duration="0:00:00.500" Orientation="Horizontal" />
+            </TransitioningContentControl.PageTransition>
+        </TransitioningContentControl>
+        <Button Theme="{StaticResource PreviousButtonTheme}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="Back"
+                Command="{Binding PreviousCharacterCommand}" />
+        <Button Theme="{StaticResource NextButtonTheme}"
+                Grid.Row="1"
+                Grid.Column="3"
+                Content="Back"
+                Command="{Binding NextCharacterCommand}" />
+        <Button Theme="{StaticResource MenuButtonTheme}"
+                Grid.Row="3"
+                Grid.Column="1"
+                Content="Back"
+                Command="{Binding BackCommand}" />
+        <Button Theme="{StaticResource MenuButtonTheme}"
+                Grid.Row="3"
+                Grid.Column="2"
+                Content="Start"
+                Command="{Binding StartCommand}" />
+
+
+    </Grid>
+</UserControl>

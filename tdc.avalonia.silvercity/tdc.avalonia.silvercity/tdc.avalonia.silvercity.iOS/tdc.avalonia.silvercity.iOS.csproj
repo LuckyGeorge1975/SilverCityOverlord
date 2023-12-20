@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0-ios</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.iOS" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Splat" Version="14.8.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\tdc.avalonia.silvercity\tdc.avalonia.silvercity.csproj" />
+    </ItemGroup>
+</Project>

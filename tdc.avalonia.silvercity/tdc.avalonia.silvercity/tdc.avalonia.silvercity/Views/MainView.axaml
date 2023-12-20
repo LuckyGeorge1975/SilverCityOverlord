@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:tdc.avalonia.silvercity.ViewModels"
+             mc:Ignorable="d"
+             Width="720"
+             Height="720"
+             x:Class="tdc.avalonia.silvercity.Views.MainView"
+             x:DataType="vm:MainViewModel">
+    <Panel>
+        <Image Stretch="UniformToFill" Source="/Assets/Backgrounds/background-01.jpg"/>
+		<TransitioningContentControl Content="{Binding CurrentViewModel}">
+            <TransitioningContentControl.PageTransition>
+                <PageSlide Duration="0:00:00.500" Orientation="Horizontal" />
+            </TransitioningContentControl.PageTransition>
+        </TransitioningContentControl>
+    </Panel>
+</UserControl>

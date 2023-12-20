@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="UI Shapes 02.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.1172104"
+     inkscape:cx="161.39569"
+     inkscape:cy="61.327932"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="polygon52"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 4.6086043,104.68851 v -9.833647 l 9.8336547,9.833647 z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="polygon53"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 64.197624,14.031308 v 0.08808 l -3.992172,3.962815 V 10.03914 Z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="polygon54"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 60.205452,19.931502 3.992172,-3.962817 v 3.962817 l -3.992172,3.962817 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="polygon55"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 60.205452,25.743633 3.992172,-3.962816 v 3.933462 l -3.992172,3.99217 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="polygon56"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 60.205452,31.555765 3.992172,-3.992171 v 3.962814 l -3.992172,3.992172 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="polygon57"
+       style="fill:#00fefe;stroke-width:0.293542"
+       class="st2"
+       d="m 64.197624,33.375724 v 7.98434 l -3.992172,-3.99217 z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="color:#000000;fill:#333333;stroke-width:0.291283;stroke-linecap:round;stroke-miterlimit:10;-inkscape-stroke:none"
+       d="M 18.131338,104.39522 4.9023813,91.146556 V 4.9021538 H 58.370632 V 38.607444 l 7.588474,7.616523 v 58.171253 z"
+       id="path1"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="color:#000000;fill:#00fefe;stroke-width:0.293542;stroke-linecap:round;stroke-miterlimit:10;-inkscape-stroke:none"
+       d="M 4.3152974,4.3150695 V 91.483396 L 17.843442,104.9823 h 0.121555 48.581197 V 46.052481 L 58.884278,38.391152 V 4.3150695 Z M 4.9023813,4.9021538 H 58.297195 V 38.634265 l 7.661911,7.661326 V 104.39522 H 18.086525 L 4.9023813,91.239723 Z"
+       id="path2"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+		<StackPanel>
+            <Label Theme="{DynamicResource DefaultLabelThemeLeft}" Content="Label"/>
+            <Label Theme="{DynamicResource DefaultLabelThemeRight}" Content="Label"/>
+        </StackPanel>
+    </Design.PreviewWith>
+    <!-- Add Resources Here -->
+	<ControlTheme x:Key="HeaderLabelTheme" TargetType="Label">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Width" Value="380"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Panel>
+                    <Image Stretch="Uniform"
+                           Source="{StaticResource HeaderLabelBackgroundImage}"
+                           Width="{TemplateBinding Width}"
+                           Height="{TemplateBinding Height}">
+                    </Image>
+                    <TextBlock x:Name="PartContentPresenter"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               IsHitTestVisible="False"
+                               Background="Transparent"
+                               FontFamily="/Assets/Fonts/ethnocentricrg.otf#Ethnocentric"
+                               FontSize="16"
+                               FontWeight="Bold"
+                               Foreground="{StaticResource MenuFontColor}"
+                               Text="{TemplateBinding Content}"/>
+                </Panel>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+
+    <ControlTheme x:Key="DefaultLabelThemeLeft" TargetType="Label">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="FontFamily" Value="/Assets/Fonts/ethnocentricrg.otf#Ethnocentric" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource MenuFontColor}" />
+		<Setter Property="Template">
+            <ControlTemplate>
+                <Label x:Name="PartContentPresenter"
+                       Background="{TemplateBinding Background}"
+                       VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                       HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                       FontFamily="{TemplateBinding FontFamily}"
+                       FontSize="{TemplateBinding FontSize}"
+                       FontWeight="{TemplateBinding FontWeight}"
+                       Foreground="{TemplateBinding Foreground}"
+                       Content="{TemplateBinding Content}"/>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+    <ControlTheme x:Key="DefaultLabelThemeRight" TargetType="Label">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="FontFamily" Value="/Assets/Fonts/ethnocentricrg.otf#Ethnocentric" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource MenuFontColor}" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Label x:Name="PartContentPresenter"
+                       Background="{TemplateBinding Background}"
+                       VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                       HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                       FontFamily="{TemplateBinding FontFamily}"
+                       FontSize="{TemplateBinding FontSize}"
+                       FontWeight="{TemplateBinding FontWeight}"
+                       Foreground="{TemplateBinding Foreground}"
+                       Content="{TemplateBinding Content}"/>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+</ResourceDictionary>

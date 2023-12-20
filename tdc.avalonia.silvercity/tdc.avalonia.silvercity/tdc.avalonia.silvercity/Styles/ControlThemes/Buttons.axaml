@@ -1,0 +1,111 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+		<StackPanel>
+            <Button Theme="{DynamicResource MenuButtonTheme}"/>
+            <Button Theme="{DynamicResource NextButtonTheme}"/>
+            <Button Theme="{DynamicResource PreviousButtonTheme}"/>
+        </StackPanel>
+    </Design.PreviewWith>
+
+	<ControlTheme TargetType="Button" x:Key="MenuButtonTheme">
+		<Setter Property="Background" Value="Transparent" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="HorizontalAlignment" Value="Center" />
+		<Setter Property="Width" Value="150"/>
+		<Setter Property="Height" Value="50"/>
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Panel>
+					<Image Stretch="Uniform"
+						   Source="{StaticResource MenuButtonBackgroundImage}"
+						   Width="{TemplateBinding Width}"
+						   Height="{TemplateBinding Height}">
+						<Image.Styles>
+							<Style Selector="Image[IsPointerOver=False]">
+								<Setter Property="Source" Value="{StaticResource MenuButtonBackgroundImage}" />
+							</Style>
+							<Style Selector="Image[IsPointerOver=True]">
+								<Setter Property="Source" Value="{StaticResource MenuButtonHoverImage}" />
+							</Style>
+							<Style Selector="Button > Image:pressed">
+								<Setter Property="Source" Value="{StaticResource MenuButtonPressedImage}" />
+							</Style>
+							<Style Selector="Image:disabled">
+								<Setter Property="Source" Value="{StaticResource MenuButtonDisabledImage}" />
+							</Style>
+						</Image.Styles>
+					</Image>
+					<Label x:Name="PartContentPresenter"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   IsHitTestVisible="False"
+							   Background="Transparent"
+							   FontFamily="/Assets/Fonts/ethnocentricrg.otf#Ethnocentric"
+							   FontSize="16"
+							   FontWeight="Bold"
+							   Foreground="{StaticResource MenuFontColor}"
+							   Content="{TemplateBinding Content}"/>
+				</Panel>
+			</ControlTemplate>
+		</Setter>
+	</ControlTheme>
+    <ControlTheme TargetType="Button" x:Key="NextButtonTheme">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Height" Value="150"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Panel>
+                    <Image Stretch="Uniform"
+                           Source="{StaticResource NextButtonBackgroundImage}"
+                           Width="{TemplateBinding Width}"
+                           Height="{TemplateBinding Height}">
+                        <Image.Styles>
+                            <Style Selector="Image[IsPointerOver=False]">
+                                <Setter Property="Source" Value="{StaticResource NextButtonBackgroundImage}" />
+                            </Style>
+                            <Style Selector="Image[IsPointerOver=True]">
+                                <Setter Property="Source" Value="{StaticResource NextButtonHoverBackgroundImage}" />
+                            </Style>
+                            <Style Selector="Button > Image:pressed">
+                                <Setter Property="Source" Value="{StaticResource NextButtonPressedBackgroundImage}" />
+                            </Style>
+                        </Image.Styles>
+                    </Image>
+                </Panel>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+    <ControlTheme TargetType="Button" x:Key="PreviousButtonTheme">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Height" Value="150"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Panel>
+                    <Image Stretch="Uniform"
+                           Source="{StaticResource PreviousButtonBackgroundImage}"
+                           Width="{TemplateBinding Width}"
+                           Height="{TemplateBinding Height}">
+                        <Image.Styles>
+                            <Style Selector="Image[IsPointerOver=False]">
+                                <Setter Property="Source" Value="{StaticResource PreviousButtonBackgroundImage}" />
+                            </Style>
+                            <Style Selector="Image[IsPointerOver=True]">
+                                <Setter Property="Source" Value="{StaticResource PreviousButtonHoverBackgroundImage}" />
+                            </Style>
+                            <Style Selector="Button > Image:pressed">
+                                <Setter Property="Source" Value="{StaticResource PreviousButtonPressedBackgroundImage}" />
+                            </Style>
+                        </Image.Styles>
+                    </Image>
+                </Panel>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+</ResourceDictionary>

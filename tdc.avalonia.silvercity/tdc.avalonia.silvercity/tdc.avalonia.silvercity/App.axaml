@@ -1,0 +1,25 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:tdc.avalonia.silvercity"
+             xmlns:viewModels="clr-namespace:tdc.avalonia.silvercity.ViewModels"
+             x:Class="tdc.avalonia.silvercity.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+    <Application.DataTemplates>
+        <viewModels:ViewLocator/>
+    </Application.DataTemplates>
+             <Application.Resources>
+                 <ResourceDictionary>
+                     <ResourceDictionary.MergedDictionaries>
+                         <ResourceInclude Source="avares://tdc.avalonia.silvercity/Themes/Theme.axaml"/>
+                         <ResourceInclude Source="avares://tdc.avalonia.silvercity/Styles/ControlThemes/Buttons.axaml"/>
+                         <ResourceInclude Source="avares://tdc.avalonia.silvercity/Styles/ControlThemes/Labels.axaml"/>
+                     </ResourceDictionary.MergedDictionaries>
+                 </ResourceDictionary>
+             </Application.Resources>
+
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="Styles/Geometry.axaml"/>
+    </Application.Styles>
+</Application>
