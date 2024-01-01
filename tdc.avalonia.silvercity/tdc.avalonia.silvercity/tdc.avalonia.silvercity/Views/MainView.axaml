@@ -4,8 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:tdc.avalonia.silvercity.ViewModels"
              mc:Ignorable="d"
-             Width="720"
-             Height="720"
              x:Class="tdc.avalonia.silvercity.Views.MainView"
              x:DataType="vm:MainViewModel">
     <Panel>

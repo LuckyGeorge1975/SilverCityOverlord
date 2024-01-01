@@ -1,6 +1,6 @@
 ﻿namespace tdc.avalonia.silvercity.Game.Character;
 
-public class CharacterModel
+public class CharacterModel : ICharacterModel
 {
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;

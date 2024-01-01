@@ -10,6 +10,5 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        DataContext = Locator.Current.GetService<MainViewModel>();
     }
 }

@@ -31,6 +31,31 @@
       <AvaloniaResource Remove="Assets\Characters\boss-tech-female-02.png" />
       <AvaloniaResource Remove="Assets\Characters\boss-tech-male-01.png" />
       <AvaloniaResource Remove="Assets\Characters\boss-tech-male-02.png" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-01.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-02.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-03.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-04.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-05.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-06.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-07.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-08.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-female-09.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-01.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-02.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-03.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-04.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-05.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-06.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-07.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-08.jpg" />
+      <AvaloniaResource Remove="Assets\Gangs\Leader\leader-male-09.jpg" />
+      <AvaloniaResource Remove="Assets\Territories\Images\dense_commercial.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\dense_residential.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\government.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\industrial.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\light_commercial.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\light_residential.png" />
+      <AvaloniaResource Remove="Assets\Territories\Images\research.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -72,6 +97,13 @@
       <None Remove="Assets\Gangs\Leader\leader-male-07.jpg" />
       <None Remove="Assets\Gangs\Leader\leader-male-08.jpg" />
       <None Remove="Assets\Gangs\Leader\leader-male-09.jpg" />
+      <None Remove="Assets\Territories\Images\dense_commercial.png" />
+      <None Remove="Assets\Territories\Images\dense_residential.png" />
+      <None Remove="Assets\Territories\Images\government.png" />
+      <None Remove="Assets\Territories\Images\industrial.png" />
+      <None Remove="Assets\Territories\Images\light_commercial.png" />
+      <None Remove="Assets\Territories\Images\light_residential.png" />
+      <None Remove="Assets\Territories\Images\research.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -95,10 +127,36 @@
       <EmbeddedResource Include="Assets\Characters\boss-tech-female-02.png" />
       <EmbeddedResource Include="Assets\Characters\boss-tech-male-01.png" />
       <EmbeddedResource Include="Assets\Characters\boss-tech-male-02.png" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-01.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-02.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-03.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-04.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-05.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-06.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-07.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-08.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-female-09.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-01.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-02.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-03.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-04.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-05.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-06.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-07.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-08.jpg" />
+      <EmbeddedResource Include="Assets\Gangs\Leader\leader-male-09.jpg" />
+      <EmbeddedResource Include="Assets\Territories\Images\dense_commercial.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\dense_residential.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\government.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\industrial.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\light_commercial.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\light_residential.png" />
+      <EmbeddedResource Include="Assets\Territories\Images\research.png" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Controls.PanAndZoom" Version="11.0.0.2" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
@@ -119,6 +177,8 @@
 
     <ItemGroup>
       <Folder Include="Assets\Fonts\" />
+      <Folder Include="Assets\Gangs\Symbols\" />
+      <Folder Include="Assets\Territories\Symbols\" />
       <Folder Include="Exceptions\" />
     </ItemGroup>
 

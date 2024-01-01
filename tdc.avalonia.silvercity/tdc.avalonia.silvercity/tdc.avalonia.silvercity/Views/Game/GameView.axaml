@@ -1,0 +1,69 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodel="clr-namespace:tdc.avalonia.silvercity.ViewModels.Game"
+             xmlns:view="clr-namespace:tdc.avalonia.silvercity.Views.Game"
+             xmlns:designTime="clr-namespace:tdc.avalonia.silvercity.ViewModels.DesignTime"
+             xmlns:controls="clr-namespace:tdc.avalonia.silvercity.Controls"
+             xmlns:territory="clr-namespace:tdc.avalonia.silvercity.Views.Game.Territory"
+             mc:Ignorable="d"
+             x:Class="tdc.avalonia.silvercity.Views.Game.GameView"
+             x:DataType="viewmodel:GameViewModel"
+             d:DataContext="{x:Static designTime:DesignData.GameViewModel}">
+	<Grid>
+		<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="75"/>
+			<RowDefinition Height="600"/>
+			<RowDefinition Height=".4*"/>
+		</Grid.RowDefinitions>
+		<ScrollViewer Grid.Column="1" Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Auto"
+                      Margin="15">
+			<ZoomBorder Name="ZoomBorder" Stretch="None"
+						ZoomSpeed="1.2"
+						ClipToBounds="True"
+						Focusable="True"
+						VerticalAlignment="Center"
+						HorizontalAlignment="Center"
+                        EnableConstrains="True"
+						MinOffsetX="-1200"
+						MinOffsetY="-1200"
+                        MaxOffsetX="0"
+                        MaxOffsetY="0"
+                        MinZoomX="0.75"
+                        MinZoomY="0.75"
+                        MaxZoomX="5"
+                        MaxZoomY="5">
+				<controls:GridItemsControl Name="GridItemsControl"
+										   VerticalAlignment="Top"
+										   HorizontalAlignment="Left"
+								   ItemsSource="{Binding Territories}"
+								   Rows="{Binding TerritoriesHeight}"
+								   Columns="{Binding TerritoriesWidth}"
+								   Width="1200"
+								   Height="1200">
+					<controls:GridItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<UniformGrid Rows="{Binding ElementName=GridItemsControl, Path=Rows}"
+										 Columns="{Binding ElementName=GridItemsControl, Path=Rows}"/>
+						</ItemsPanelTemplate>
+					</controls:GridItemsControl.ItemsPanel>
+					<controls:GridItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type viewmodel:TerritoryViewModel}">
+							<territory:TerritoryView Margin="1" Grid.Row="{Binding Y}"
+												Grid.Column="{Binding X}"/>
+						</DataTemplate>
+					</controls:GridItemsControl.ItemTemplate>
+				</controls:GridItemsControl>
+			</ZoomBorder>
+		</ScrollViewer>
+		<Image Grid.Column="1" Grid.Row="1" Source="{StaticResource TerritoriesBorder}"/>
+		</Grid>
+</UserControl>

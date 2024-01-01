@@ -1,0 +1,71 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:game="clr-namespace:tdc.avalonia.silvercity.ViewModels.Game"
+             xmlns:designTime="clr-namespace:tdc.avalonia.silvercity.ViewModels.DesignTime"
+             xmlns:views="clr-namespace:tdc.avalonia.silvercity.Views.Game"
+             xmlns:territory="clr-namespace:tdc.avalonia.silvercity.Views.Game.Territory"
+             mc:Ignorable="d" d:DesignWidth="150" d:DesignHeight="150"
+             x:Class="tdc.avalonia.silvercity.Views.Game.Territory.TerritoryView"
+             x:DataType="game:TerritoryViewModel"
+             d:DataContext="{x:Static designTime:DesignData.TerritoryViewModel}">
+	<Panel Name="RootPanel" PointerPressed="RootPanel_OnPointerPressed">
+        <Border Name="BackgroundBorder" Opacity="0.8">
+			<Border.Styles>
+				<Style Selector="Border[IsPointerOver=True]">
+					<Setter Property="Opacity" Value="1"/>
+                    <Setter Property="RenderTransform">
+						<Setter.Value>
+							<ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+						</Setter.Value>
+                    </Setter>
+                </Style>
+            </Border.Styles>
+            <Border.Background>
+				<ImageBrush Source="{Binding Image}"/>
+			</Border.Background>
+		</Border>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <territory:TerritoryGangSymbolView Margin="2"
+                                           Grid.Column="2"
+                                           Grid.Row="0"
+                                           IsVisible="{Binding IsCurrentPlayerGangPresent}"/>
+        </Grid>
+
+        <Border Name="ControlledBorder" IsVisible="{Binding IsCurrentPlayerControlled}">
+            <Border.Background>
+                <DrawingBrush>
+                    <DrawingBrush.Drawing>
+                        <GeometryDrawing Brush="{Binding CurrentPlayer.Color}"
+                                         Geometry="M 1.996856,0 0,2.1465259
+										 V 50.91981
+										 l 2.1465261,1.99634 48.7732829,5.1e-4 1.99686,-2.146521
+										 V 1.996855
+										 L 50.770138,0
+										 Z
+										 M 8.0000002,2.9999999
+										 H 45.000001
+										 l 5,4.9999999
+										 V 44.999999
+										 l -5,5
+										 H 8.0000002
+										 l -5.0000001,-5
+										 V 7.9999998
+										 Z"/>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Border.Background>
+        </Border>
+	</Panel>
+</UserControl>

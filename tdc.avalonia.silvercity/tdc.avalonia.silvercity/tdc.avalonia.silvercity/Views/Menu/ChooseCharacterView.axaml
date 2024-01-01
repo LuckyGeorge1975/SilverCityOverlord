@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:menu="clr-namespace:tdc.avalonia.silvercity.ViewModels.Menu"
              xmlns:designTime="clr-namespace:tdc.avalonia.silvercity.ViewModels.DesignTime"
+             xmlns:controls="clr-namespace:tdc.avalonia.silvercity.Controls"
+             xmlns:animations="clr-namespace:tdc.avalonia.silvercity.Controls.Animations"
              mc:Ignorable="d"
              d:DesignWidth="720"
              d:DesignHeight="720"
@@ -30,16 +32,18 @@
                Grid.ColumnSpan="2"
                Content="Choose Character"
                Theme="{DynamicResource HeaderLabelTheme}" />
-		<TransitioningContentControl Grid.Row="1"
-                                     Grid.Column="1"
-                                     Grid.ColumnSpan="2"
-                                     Margin="20"
-                                     Content="{Binding CurrentCharacter}"
-                                     Background="Transparent">
-            <TransitioningContentControl.PageTransition>
-				<PageSlide Duration="0:00:00.500" Orientation="Horizontal" />
-            </TransitioningContentControl.PageTransition>
-        </TransitioningContentControl>
+		<Panel Grid.Row="1"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+               Margin="20"
+               Background="Transparent">
+            <Carousel x:Name="CharacterCarousel" ItemsSource="{Binding Characters}"
+                             SelectedItem="{Binding CurrentCharacter}">
+				<Carousel.PageTransition>
+					<animations:EndlessPageSlide Duration="0:00:00.500" Orientation="Horizontal" />
+				</Carousel.PageTransition>
+			</Carousel>
+        </Panel>
         <Button Theme="{StaticResource PreviousButtonTheme}"
                 Grid.Row="1"
                 Grid.Column="0"

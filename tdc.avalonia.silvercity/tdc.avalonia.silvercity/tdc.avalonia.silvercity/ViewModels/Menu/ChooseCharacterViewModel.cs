@@ -3,7 +3,9 @@ using System.Collections.ObjectModel;
 using MediatR;
 using ReactiveUI;
 using tdc.avalonia.silvercity.Events;
+using tdc.avalonia.silvercity.Game;
 using tdc.avalonia.silvercity.Game.Character;
+using tdc.avalonia.silvercity.Game.Player;
 using tdc.avalonia.silvercity.ViewModels.Game;
 
 namespace tdc.avalonia.silvercity.ViewModels.Menu;
@@ -23,6 +25,8 @@ public class ChooseCharacterViewModel : ViewModelBase
         set => this.RaiseAndSetIfChanged(ref _currentCharacter,value);
     }
 
+    public ObservableCollection<CharacterViewModel> Characters { get; }
+
     public ChooseCharacterViewModel(IMediator mediator)
     {
         _mediator = mediator;
@@ -31,7 +35,7 @@ public class ChooseCharacterViewModel : ViewModelBase
         {
             _characters.Add(new CharacterViewModel(character));
         }
-
+        Characters = new ObservableCollection<CharacterViewModel>(_characters);
         CurrentCharacter = _characters[_currentCharacterIndex];
     }
 
@@ -61,6 +65,9 @@ public class ChooseCharacterViewModel : ViewModelBase
 
     public bool StartCommand()
     {
+        var gameVm = new GameViewModel(_mediator);
+        gameVm.InititalizeGame(GameModel.CreateGame(8,8, new List<IPlayerModel>()));
+        _mediator.Publish(new ChangeViewModelEvent(nameof(GameViewModel), gameVm));
         return true;
     }
 

@@ -12,6 +12,7 @@
                  <ResourceDictionary>
                      <ResourceDictionary.MergedDictionaries>
                          <ResourceInclude Source="avares://tdc.avalonia.silvercity/Themes/Theme.axaml"/>
+                         <ResourceInclude Source="avares://tdc.avalonia.silvercity/Styles/ControlThemes/GridItemsControl.axaml"/>
                          <ResourceInclude Source="avares://tdc.avalonia.silvercity/Styles/ControlThemes/Buttons.axaml"/>
                          <ResourceInclude Source="avares://tdc.avalonia.silvercity/Styles/ControlThemes/Labels.axaml"/>
                      </ResourceDictionary.MergedDictionaries>
@@ -20,6 +21,7 @@
 
     <Application.Styles>
         <FluentTheme />
-        <StyleInclude Source="Styles/Geometry.axaml"/>
+        <StyleInclude Source="Styles/PathGeometry.axaml"/>
+        <StyleInclude Source="Styles/SymbolGeometry.axaml"/>
     </Application.Styles>
 </Application>

@@ -17,9 +17,9 @@ public class CharacterGenerator
     public const string ScienceIdentifier = "-science-";
 
     public const int MaxCharacters = 20;
-    private static readonly List<CharacterModel> _characters = new();
+    private static readonly List<ICharacterModel> _characters = new();
 
-    public static CharacterModel GenerateCharacter(string resourceName)
+    public static ICharacterModel GenerateCharacter(string resourceName)
     {
         if(String.IsNullOrEmpty(resourceName))
             resourceName = GetBossResourceName().First();
@@ -37,7 +37,7 @@ public class CharacterGenerator
         return character;
     }
 
-    public static List<CharacterModel> GetCharacters()
+    public static List<ICharacterModel> GetCharacters()
     {
         if (_characters.Count == 0)
         {

@@ -4,7 +4,7 @@ using tdc.avalonia.silvercity.Game.Character;
 
 namespace tdc.avalonia.silvercity.ViewModels.Game;
 
-public class CharacterViewModel(CharacterModel character) : ViewModelBase
+public class CharacterViewModel(ICharacterModel character) : ViewModelBase
 {
     public string Name => character.Name;
     public string Description => character.Description;

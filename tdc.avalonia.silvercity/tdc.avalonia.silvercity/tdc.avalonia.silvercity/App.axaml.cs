@@ -52,10 +52,14 @@ public partial class App : Application
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             desktop.MainWindow = Locator.Current.GetService<MainWindow>();
+            if (desktop.MainWindow != null)
+                desktop.MainWindow.DataContext = DataContext = Locator.Current.GetService<MainViewModel>();
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
             singleViewPlatform.MainView = Locator.Current.GetService<MainView>();
+            if (singleViewPlatform.MainView != null)
+                singleViewPlatform.MainView.DataContext = Locator.Current.GetService<MainViewModel>();
         }
 
         base.OnFrameworkInitializationCompleted();

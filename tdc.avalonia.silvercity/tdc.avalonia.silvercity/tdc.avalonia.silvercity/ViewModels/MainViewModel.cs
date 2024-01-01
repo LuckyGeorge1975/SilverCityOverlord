@@ -7,7 +7,9 @@ using ReactiveUI;
 using Splat;
 using tdc.avalonia.silvercity.Events;
 using tdc.avalonia.silvercity.Exceptions;
+using tdc.avalonia.silvercity.ViewModels.Game;
 using tdc.avalonia.silvercity.ViewModels.Menu;
+using tdc.avalonia.silvercity.Views.Game;
 
 namespace tdc.avalonia.silvercity.ViewModels;
 
@@ -17,13 +19,9 @@ public class MainViewModel : ViewModelBase
     public MainViewModel(IMediator mediator)
     {
         _mediator = mediator;
-        Debug.WriteLine("Ctr called!");
     }
     private ViewModelBase _currentViewModel = Locator.Current.GetService<StartViewModel>() ??
                                               throw new ServiceNotFoundException(nameof(StartViewModel));
-
-    //private ViewModelBase _currentViewModel = Locator.Current.GetService<ChooseCharacterViewModel>() ??
-    //                                          throw new ServiceNotFoundException(nameof(ChooseCharacterViewModel));
 
     public ViewModelBase CurrentViewModel
     {
@@ -39,6 +37,7 @@ public class MainViewModel : ViewModelBase
                                       throw new ServiceNotFoundException(nameof(StartViewModel)),
             nameof(ChooseCharacterViewModel) => Locator.Current.GetService<ChooseCharacterViewModel>() ?? 
                                                 throw new ServiceNotFoundException(nameof(ChooseCharacterViewModel)),
+            nameof(GameViewModel) => @event.ViewModel,
             _ => CurrentViewModel
         });
 
